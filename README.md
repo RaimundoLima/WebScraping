@@ -10,5 +10,5 @@
 - puppeteer + chromium to scraping
 
 ## Installation
-Clone this repository and is ready to run in visual studio
+Clone this repository and is ready to run on visual studio
 /WebScraping/WebScraping.sln
