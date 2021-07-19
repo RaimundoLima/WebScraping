@@ -1,5 +1,5 @@
 # WebScrapping
-## A generic WebScrapping for images
+## A generic WebScrapping for images and words
 
 ## Features
 - .NET 5
