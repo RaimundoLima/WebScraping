@@ -11,3 +11,4 @@
 
 ## Installation
 Clone this repository and is ready to run in visual studio
+/WebScraping/WebScraping.sln
