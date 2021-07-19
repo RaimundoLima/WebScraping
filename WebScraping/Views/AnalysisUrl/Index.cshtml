@@ -1,0 +1,39 @@
+﻿@model UrlModel
+
+@{
+    ViewData["Title"] = "Altudo";
+}
+
+<div>
+    <h1 class="display-4">URL Analyzer</h1>
+    @using (Html.BeginForm("AnalysisUrl","AnalysisUrl", FormMethod.Get, new { @name = "frmUrl", id = "frmUrl" }))
+    {
+    @Html.TextBoxFor(modelo => modelo.Url, new {  @required = "required" })
+    }
+    <a href="/swagger/index.html">Or use the API</a>
+</div>
+<div id="DataSet">
+    <div width="80%">
+        <canvas id="Chart"></canvas>
+    </div>
+    <div id="ImagesArea">
+    </div>
+</div>
+
+<div id="ajaxModal" class="modal fade bd-example-modal-lg" style="Top: 40%" data-backdrop="static" data-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-sm">
+        <div style="width: 48px;height:48px" class="spinner-border text-warning" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+</div>
+
+<div id="imgModal" class="modal fade bd-example-modal-lg" data-dismiss="imgModal" style="" data-backdrop="static" data-keyboard="false" tabindex="-1">
+    <div id="imgModalBody" class=" modal-body" data-dismiss="imgModal" style="width: 100%;height: 100%;top: 0;position: absolute;">
+        <div class="modal-dialog modal-sm">
+            <div id="fullImage" style="background-color: black;max-width: 1000px;max-height:1000px" class="text-warning" role="status">
+            </div>
+        </div>
+    </div>
+</div>
+

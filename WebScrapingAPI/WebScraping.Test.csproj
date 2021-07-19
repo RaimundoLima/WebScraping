@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.5" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+    <PackageReference Include="coverlet.collector" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="E2E\" />
+    <Folder Include="Integration\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebScraping.Lib\WebScraping.Lib.csproj" />
+    <ProjectReference Include="..\WebScraping\WebScraping.csproj" />
+  </ItemGroup>
+
+</Project>

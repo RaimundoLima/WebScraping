@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Knyaz.Optimus" Version="2.4.1" />
+    <PackageReference Include="Knyaz.Optimus.Scripting.Jurassic" Version="2.3.3" />
+    <PackageReference Include="phantomjs.exe" Version="1.9.2.1" />
+    <PackageReference Include="PuppeteerSharp" Version="5.0.0" />
+    <PackageReference Include="Selenium.Support" Version="3.11.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="3.13.0" />
+    <PackageReference Include="Selenium.WebDriver.PhantomJS" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,2 +1,7 @@
-# WebScraping
-WebScraping
+"# WebScraping"
+
+-- clone do repo
+
+--run publciado
+
+--
